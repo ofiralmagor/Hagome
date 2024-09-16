@@ -1,0 +1,129 @@
+.events-page {
+    padding: 65px; 
+    text-align: right; 
+    font-family: "David Libre", serif;
+}
+
+.events-h1 {
+    margin-top: 65px;
+    margin-bottom: 40px;
+    margin-right: 65px; 
+    font-size: 2.5rem;
+    text-align: right;
+}
+
+.events-p1 {
+    line-height: 1.5;
+    word-spacing: 1.9px;
+    margin-bottom: 50px;
+    margin-right: 65px; 
+    font-size: 1.5rem;
+}
+
+.events-p2 {
+    line-height: 1.5;
+    word-spacing: 1.9px;
+    margin-bottom: 10px;
+    margin-top: 50px;
+    margin-right: 65px; 
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.events-p3 {
+    line-height: 1.5;
+    word-spacing: 1.9px;
+    margin-bottom: 20px;
+    margin-right: 65px; 
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.carousel {
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+.carousel-item img {
+    height: 550px;
+    object-fit: cover;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 60%;
+}
+
+.carousel-indicators li {
+    background-color: #000;
+}
+
+.carousel-indicators .active {
+    background-color: #fff;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 8%;
+}
+
+
+@media (max-width: 768px) {
+    .events-h1 {
+        font-size: 2.5rem; 
+        margin-right: 30px; 
+    }
+
+    .events-p1 {
+        font-size: 1.5rem; 
+        margin-right: 30px; 
+    }
+
+    .events-p2 {
+        text-align: center;
+    }
+
+    .events-p3 {
+        text-align: center;
+    }
+
+    .carousel-item img {
+        height: 380px;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 8%; 
+    }
+}
+
+
+@media (max-width: 480px) {
+    .events-h1 {
+        font-size: 1.5rem; 
+        margin-right: 10px; 
+    }
+
+    .events-p1 {
+        font-size: 1.1rem; 
+        margin-right: 5px; 
+    }
+    
+    .events-p2 {
+        text-align: center;
+    }
+
+    .events-p3 {
+        text-align: center;
+    }
+
+    .carousel-item img {
+        height: 300px;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 12%; 
+    }
+}

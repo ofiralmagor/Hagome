@@ -1,0 +1,95 @@
+.about-page {
+    padding: 30px; 
+    text-align: right; 
+    font-family: "David Libre", serif;
+}
+
+
+.about-page-title {
+    margin-top: 30px;
+    margin-bottom: 40px; 
+    font-size: 2.5rem; 
+    text-align: right; 
+}
+
+
+.about-page-info {
+    line-height: 1.5; 
+    word-spacing: 1.9px; 
+    margin-bottom: 20px; 
+    font-size: 1.5rem;
+}
+
+
+.about-card-container {
+    display: flex; 
+    justify-content: space-between; 
+    gap: 10px; 
+    flex-wrap: wrap; 
+    margin-top: 65px; 
+}
+
+
+.about-card {
+    background: #1d1d1d6c; 
+    border: none; 
+    border-radius: 8px; 
+    padding: 30px; 
+    flex: 1; 
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    margin-top: 20px; 
+}
+
+
+.about-card-title { 
+    font-size: 1.5rem; 
+    margin-bottom: 8px; 
+}
+
+
+.about-card-bold {
+    font-weight: bold;
+    font-size: 1.25rem; 
+    margin-bottom: 10px; 
+}
+
+.about-p {
+    font-size: larger;
+}
+
+
+@media (max-width: 768px) {
+    .about-card-title {
+        font-size: 2.5rem; 
+    }
+
+    .about-card-container {
+        flex-direction: column; 
+        gap: 20px; 
+    }
+
+    .about-card {
+        max-width: 100%; 
+        padding: 15px; 
+        font-size: 1.10rem; 
+    }
+}
+
+@media (max-width: 480px) {
+    .about-page-title {
+        font-size: 2rem; 
+    }
+
+    .about-card {
+        padding: 10px; 
+    }
+
+    .about-card-title {
+        font-size: 1.20rem; 
+    }
+
+    .about-card-bold {
+        font-size: 1.20rem; 
+    }
+}

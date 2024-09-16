@@ -1,0 +1,39 @@
+.page-title {
+  text-align: center;
+  margin-top: 90px; 
+  margin-bottom: 140px;
+  font-size: 2.5rem; 
+}
+
+.restaurants-container {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 15px; 
+  justify-content: center; 
+}
+
+
+@media (max-width: 768px) {
+  .page-title {
+    margin-bottom: 80px; 
+  }
+
+  .restaurant-card {
+    flex: 1 1 calc(45% - 15px); 
+    max-width: 200px; 
+    max-height: 200px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .page-title {
+    margin-bottom: 40px; 
+  }
+
+  .restaurant-card {
+    flex: 1 1 100%; 
+    max-width: 200px; 
+    max-height: 200px; 
+  }
+}
