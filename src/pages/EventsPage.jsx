@@ -2,7 +2,7 @@ import './styles/EventsPageStyles.css';
 
 export default function EventsPage() {
     return (
-        <div classname="events-page">
+        <div className="events-page">
             <h2 className="events-h1">אירועים במתחם</h2>
             <p className="events-p1">כמעט בכל שנה אנו מקימים פסטיבלי קיץ ישראלים העשירים בדוכני אוכל, מוזיקה חיה וירידי אומנים מהצפון.</p>
             <div id="carouselExample" className="carousel slide">
