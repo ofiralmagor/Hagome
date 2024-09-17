@@ -20,6 +20,10 @@
     font-size: 1.5rem;
 }
 
+.end-div {
+    text-align: center;
+}
+
 .events-p2 {
     line-height: 1.5;
     word-spacing: 1.9px;
@@ -80,13 +84,10 @@
         margin-right: 30px; 
     }
 
-    .events-p2 {
+    .end-div {
         text-align: center;
     }
 
-    .events-p3 {
-        text-align: center;
-    }
 
     .carousel-item img {
         height: 380px;
@@ -109,15 +110,11 @@
         font-size: 1.1rem; 
         margin-right: 5px; 
     }
+
+    .end-div {
+        text-align: center;
+    }
     
-    .events-p2 {
-        text-align: center;
-    }
-
-    .events-p3 {
-        text-align: center;
-    }
-
     .carousel-item img {
         height: 300px;
     }

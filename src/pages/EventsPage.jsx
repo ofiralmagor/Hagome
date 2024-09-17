@@ -44,8 +44,10 @@ export default function EventsPage() {
                     <span className="visually-hidden">Next</span>
                 </button>
             </div>
-            <p className="events-p2">רוצים להיות חלק מהפסטיבל הבא? </p>
-            <p className="events-p3">דברו איתנו: 0558838601</p>
+            <div className="end-div">
+               <p className="events-p2">רוצים להיות חלק מהפסטיבל הבא? </p>
+               <p className="events-p3">דברו איתנו: 0558838601</p> 
+            </div>
         </div>
     );
 }
