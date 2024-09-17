@@ -17,11 +17,6 @@ body::before {
   z-index: -1; 
 }
 
-body {
-  background: url('/images/gomecover2.jpeg') no-repeat center center fixed;
-  background-size: cover;
-}
-
 .container {
   position: relative;
   z-index: 1;

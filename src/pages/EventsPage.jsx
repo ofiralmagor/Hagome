@@ -1,4 +1,17 @@
+import React from 'react';
 import './styles/EventsPageStyles.css';
+
+const imageData = [
+    '/eventsImages/event2.jpeg',
+    '/eventsImages/event3.jpeg',
+    '/eventsImages/event4.jpeg',
+    '/eventsImages/event5.jpeg',
+    '/eventsImages/event6.jpeg',
+    '/eventsImages/event7.jpeg',
+    '/eventsImages/event8.jpeg',
+    '/eventsImages/event9.jpeg',
+    '/eventsImages/event10.jpeg'
+];
 
 export default function EventsPage() {
     return (
@@ -7,33 +20,14 @@ export default function EventsPage() {
             <p className="events-p1">כמעט בכל שנה אנו מקימים פסטיבלי קיץ ישראלים העשירים בדוכני אוכל, מוזיקה חיה וירידי אומנים מהצפון.</p>
             <div id="carouselExample" className="carousel slide">
                 <div className="carousel-inner">
-                    <div className="carousel-item active">
-                        <img src="/eventsImages/event2.jpeg" className="d-block w-100" alt="Event 1"/>
-                    </div>
-                    <div className="carousel-item">
-                        <img src="/eventsImages/event3.jpeg" className="d-block w-100" alt="Event 2"/>
-                    </div>
-                    <div className="carousel-item">
-                        <img src="/eventsImages/event4.jpeg" className="d-block w-100" alt="Event 3"/>
-                    </div>
-                    <div className="carousel-item">
-                        <img src="/eventsImages/event5.jpeg" className="d-block w-100" alt="Event 4"/>
-                    </div>
-                    <div className="carousel-item">
-                        <img src="/eventsImages/event6.jpeg" className="d-block w-100" alt="Event 5"/>
-                    </div>
-                    <div className="carousel-item">
-                        <img src="/eventsImages/event7.jpeg" className="d-block w-100" alt="Event 6"/>
-                    </div>
-                    <div className="carousel-item">
-                        <img src="/eventsImages/event8.jpeg" className="d-block w-100" alt="Event 7"/>
-                    </div>
-                    <div className="carousel-item">
-                        <img src="/eventsImages/event9.jpeg" className="d-block w-100" alt="Event 8"/>
-                    </div>
-                    <div className="carousel-item">
-                        <img src="/eventsImages/event10.jpeg" className="d-block w-100" alt="Event 9"/>
-                    </div>
+                    {imageData.map((src, index) => (
+                        <div 
+                            className={`carousel-item ${index === 0 ? 'active' : ''}`} 
+                            key={src}
+                        >
+                            <img src={src} className="d-block w-100" alt={`Event ${index + 1}`} />
+                        </div>
+                    ))}
                 </div>
                 <button className="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
                     <span className="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -51,4 +45,3 @@ export default function EventsPage() {
         </div>
     );
 }
-
