@@ -1,9 +1,29 @@
-.page-title {
-  text-align: center;
-  margin-top: 90px; 
-  margin-bottom: 140px;
-  font-size: 2.5rem; 
+.rest-page {
+  padding: 30px;
+  font-family: "David Libre", serif;
+  text-align: left;
 }
+
+.page-title {
+  font-size: 2.5rem;
+  color: black;
+  margin-right: 80px;
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+
+
+.page-intro {
+  line-height: 1.8; 
+  font-size: 1.4rem;
+  color: black;
+  text-align: justify; 
+  margin-bottom: 30px;
+  margin-right: 80px;
+  max-width: 1200px; 
+  overflow-wrap: break-word; 
+}
+
 
 .restaurants-container {
   display: flex;
@@ -12,10 +32,20 @@
   justify-content: center; 
 }
 
-
 @media (max-width: 768px) {
   .page-title {
-    margin-bottom: 80px; 
+    font-size: 1.8rem;
+    margin-bottom: 20px; 
+    margin-right: 20px;
+    font-weight: bolder;
+    margin-top: 20px;
+  }
+
+  .page-intro {
+    font-size: 1.3rem;
+    padding: 20px 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
   }
 
   .restaurant-card {
@@ -28,12 +58,20 @@
 
 @media (max-width: 480px) {
   .page-title {
-    margin-bottom: 40px; 
+    font-size: 1.8rem;
+    margin-right: 20px;
+    font-weight: bolder;
+    margin-top: 20px; 
+  }
+
+  .page-intro {
+    margin-right: 10px;
+    font-size: 1.3rem;
   }
 
   .restaurant-card {
-    flex: 1 1 100%; 
-    max-width: 200px; 
-    max-height: 200px; 
+    flex: 1 1 calc(45% - 20px); 
+    max-width: 600px; 
+    max-height: 150px;
   }
-}
+} 

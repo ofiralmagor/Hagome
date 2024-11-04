@@ -1,95 +1,137 @@
 .about-page {
-    padding: 30px; 
-    text-align: right; 
+    padding: 30px;
+    text-align: left;
     font-family: "David Libre", serif;
 }
 
-
 .about-page-title {
-    margin-top: 30px;
-    margin-bottom: 40px; 
-    font-size: 2.5rem; 
-    text-align: right; 
+    font-size: 2.5rem;
+    color: black;
+    margin-right: 80px;
+    margin-bottom: 50px;
+    margin-top: 70px;
 }
 
-
 .about-page-info {
-    line-height: 1.5; 
-    word-spacing: 1.9px; 
-    margin-bottom: 20px; 
-    font-size: 1.5rem;
+    line-height: 1.8; 
+    font-size: 1.4rem;
+    color: black;
+    text-align: justify; 
+    margin-bottom: 30px;
+    margin-right: 80px;
+    max-width: 1200px; 
+    overflow-wrap: break-word; 
 }
 
 
 .about-card-container {
-    display: flex; 
-    justify-content: space-between; 
-    gap: 10px; 
-    flex-wrap: wrap; 
-    margin-top: 65px; 
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 65px;
+    margin-right: 40px;
+    margin-left: 40px;
 }
-
 
 .about-card {
-    background: #1d1d1d6c; 
-    border: none; 
-    border-radius: 8px; 
-    padding: 30px; 
-    flex: 1; 
-    max-width: 300px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    margin-top: 20px; 
+    background: #97cfb2;
+    border: none;
+    border-radius: 8px;
+    padding: 15px;
+    flex: 1;
+    max-width: 350px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    color: black;
+    line-height: 1.8; 
+    text-align: start; 
 }
 
-
-.about-card-title { 
-    font-size: 1.5rem; 
-    margin-bottom: 8px; 
+.about-card-title {
+    font-size: 1.6rem;
+    margin-bottom: 12px;
+    font-weight: bold;
 }
-
 
 .about-card-bold {
     font-weight: bold;
-    font-size: 1.25rem; 
-    margin-bottom: 10px; 
+    font-size: 1.2rem;
+    margin-bottom: 10px;
 }
 
 .about-p {
-    font-size: larger;
+    font-size: 1.2rem;
+    text-align: start;
+    margin: 0;
+    margin-bottom: 20px;
+    line-height: 1.6;
 }
 
-
 @media (max-width: 768px) {
-    .about-card-title {
-        font-size: 2.5rem; 
-    }
-
     .about-card-container {
-        flex-direction: column; 
-        gap: 20px; 
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 
     .about-card {
-        max-width: 100%; 
-        padding: 15px; 
-        font-size: 1.10rem; 
+        flex: 0 1 calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+
+    .about-page-title {
+        font-size: 1.8rem;
+        margin-bottom: 20px; 
+        margin-right: 20px;
+        font-weight: bolder;
+        margin-top: 20px;
+    }
+
+    .about-page-info,
+    .about-card-container {
+        font-size: 1.3rem;
+        padding: 20px 10px;
+        margin-bottom: 10px;
+        margin-right: 10px;
+    }
+
+    .about-p {
+        font-size: 1.2rem;
     }
 }
 
 @media (max-width: 480px) {
     .about-page-title {
-        font-size: 2rem; 
+        font-size: 1.8rem;
+        margin-right: 20px;
+        font-weight: bolder;
+        margin-top: 20px; 
+    }
+
+    .about-page-info {
+        margin-right: 10px;
+    }
+
+    .about-card-container {
+        margin-right: 5px;
+        margin-left: 5px;
+        font-size: 1.3rem;
     }
 
     .about-card {
-        padding: 10px; 
+        padding: 15px;
     }
 
     .about-card-title {
-        font-size: 1.20rem; 
+        font-size: 1.3rem;
+        font-weight: bold;
     }
 
     .about-card-bold {
-        font-size: 1.20rem; 
+        font-size: 1rem;
+    }
+
+    .about-p {
+        font-size: 1rem;
     }
 }

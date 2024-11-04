@@ -17,7 +17,7 @@ export default function EventsPage() {
     return (
         <div className="events-page">
             <h2 className="events-h1">אירועים במתחם</h2>
-            <p className="events-p1">כמעט בכל שנה אנו מקימים פסטיבלי קיץ ישראלים העשירים בדוכני אוכל, מוזיקה חיה וירידי אומנים מהצפון.</p>
+            <p className="events-p1">צומת הגומא מארח מדי שנה פסטיבלים צבעוניים ועשירים הכוללים דוכני אוכל מגוונים, מוזיקה חיה ואווירה שמחה. הפסטיבלים מציעים למבקרים חוויה מיוחדת עם מופעים, ירידי אמנים מהצפון ודוכנים של אמנות מקומית. זהו מקום מפגש אידיאלי למשפחות, חברים וכל מי שמחפש ליהנות מהאווירה והטעמים של הגליל.</p>
             <div id="carouselExample" className="carousel slide">
                 <div className="carousel-inner">
                     {imageData.map((src, index) => (
@@ -40,7 +40,7 @@ export default function EventsPage() {
             </div>
             <div className="end-div">
                <p className="events-p2">רוצים להיות חלק מהפסטיבל הבא? </p>
-               <p className="events-p3">דברו איתנו: 0558838601</p> 
+               <p className="events-p3"> לפרטים: 0558838601</p> 
             </div>
         </div>
     );

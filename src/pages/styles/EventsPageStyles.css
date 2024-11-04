@@ -1,27 +1,30 @@
 .events-page {
-    padding: 65px; 
-    text-align: right; 
+    padding: 30px; 
+    text-align: left; 
     font-family: "David Libre", serif;
 }
 
 .events-h1 {
-    margin-top: 65px;
-    margin-bottom: 40px;
-    margin-right: 65px; 
     font-size: 2.5rem;
-    text-align: right;
+    color: black;
+    margin-right: 80px;
+    margin-bottom: 50px;
+    margin-top: 70px;
 }
 
 .events-p1 {
-    line-height: 1.5;
-    word-spacing: 1.9px;
-    margin-bottom: 50px;
-    margin-right: 65px; 
-    font-size: 1.5rem;
+    line-height: 1.8; 
+    font-size: 1.4rem;
+    color: black;
+    text-align: justify; 
+    margin-bottom: 30px;
+    margin-right: 80px;
+    max-width: 1200px;
+    overflow-wrap: break-word;
 }
 
 .end-div {
-    text-align: center; /* Ensures text within this div is centered */
+    text-align: center; 
 }
 
 .events-p2 {
@@ -29,20 +32,22 @@
     word-spacing: 1.9px;
     margin-bottom: 10px;
     margin-top: 50px;
-    margin-right: auto; /* Remove right margin */
-    margin-left: auto;  /* Add left margin to center */
-    font-size: 1.3rem;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 1.2rem;
     text-align: center;
+    color: black;
 }
 
 .events-p3 {
     line-height: 1.5;
     word-spacing: 1.9px;
     margin-bottom: 20px;
-    margin-right: auto; /* Remove right margin */
-    margin-left: auto;  /* Add left margin to center */
-    font-size: 1.3rem;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 1.2rem;
     text-align: center;
+    color: black;
 }
 
 .carousel {
@@ -53,71 +58,97 @@
 .carousel-item img {
     height: 550px;
     object-fit: cover;
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 60%;
-}
-
-.carousel-indicators li {
-    background-color: #000;
-}
-
-.carousel-indicators .active {
-    background-color: #fff;
+    border-radius: 10px;
 }
 
 .carousel-control-prev,
 .carousel-control-next {
-    width: 8%;
+    width: 8%; 
+    color: black;
+    margin-right: -80px;
+    margin-left: -80px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: black; 
+    border-radius: 20%; 
+    color: rgb(255, 255, 255);
+    width: 35px; 
+    height: 35px;
+    background-size: 100%; 
+    align-items: center;
+}
+
+.carousel-indicators li {
+    background-color: #000000;
+}
+
+.carousel-indicators .active {
+    background-color: #000000;
 }
 
 @media (max-width: 768px) {
     .events-h1 {
-        font-size: 2.5rem; 
-        margin-right: 30px; 
+        font-size: 1.8rem;
+        margin-bottom: 20px; 
+        margin-right: 20px;
+        font-weight: bolder;
+        margin-top: 20px;
     }
 
     .events-p1 {
-        font-size: 1.5rem; 
-        margin-right: 30px; 
+        font-size: 1.3rem;
+        padding: 20px 10px;
+        margin-bottom: 10px;
+        margin-right: 10px;
     }
 
     .carousel-item img {
         height: 380px;
+        border-radius: 10px;
     }
 
     .carousel-control-prev,
     .carousel-control-next {
-        width: 8%; 
+        width: 5%; 
+        color: white;
+        border-color: black;
+        margin-right: -35px;
+        margin-left: -35px;
     }
 }
 
 @media (max-width: 480px) {
     .events-h1 {
-        font-size: 1.5rem; 
-        margin-right: 10px; 
+        font-size: 1.8rem;
+        margin-right: 20px;
+        font-weight: bolder;
+        margin-top: 20px; 
     }
 
     .events-p1 {
-        font-size: 1.1rem; 
-        margin-right: 5px; 
+        margin-right: 10px;
+        font-size: 1.3rem;
     }
 
     .events-p2,
     .events-p3 {
-        margin-right: auto; /* Ensure text is centered */
-        margin-left: auto;  /* Ensure text is centered */
+        margin-right: auto;
+        margin-left: auto;
     }
 
     .carousel-item img {
         height: 300px;
+        border-radius: 10px;
     }
 
     .carousel-control-prev,
     .carousel-control-next {
-        width: 12%; 
+        width: 6%; 
+        color: white;
+        border-color: black;
+        margin-right: -25px;
+        margin-left: -25px;
     }
 }

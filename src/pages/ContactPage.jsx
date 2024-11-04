@@ -20,7 +20,7 @@ export default function ContactPage() {
                     <p className="contact-card-text">צומת הגומא/כביש 977</p>
                 </div>
                 <div className="contact-card">
-                    <i class="bi bi-facebook icon-large"></i>
+                    <i className="bi bi-facebook icon-large"></i>
                     <p className="contact-card-text">צומת הגומא בפייסבוק</p>
                 </div>
             </div>
